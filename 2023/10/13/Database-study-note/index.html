@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head prefix="og: https://ogp.me/ns#">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  
+  <title>Database study note - A w31r4 place</title>
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    <link rel='manifest' href='/manifest.json'>
+  
+
+  
+  
+  
+  <meta property="og:title" content="Database study note - A w31r4 place" />
+  
+  <meta property="og:type" content="article" />
+  
+  <meta property="og:url" content="http://example.com/2023/10/13/Database-study-note/index.html" />
+  
+  <meta property="og:image" content="/favicon.png" />
+  
+  <meta property="og:article:published_time" content="2023-10-12T23:30:18.000Z" />
+  
+  <meta property="og:article:author" content="w31rd" />
+  
+  
+
+  
+<link rel="stylesheet" href="/css/var.css">
+
+  
+<link rel="stylesheet" href="/css/main.css">
+
+  
+<link rel="stylesheet" href="/css/typography.css">
+
+  
+<link rel="stylesheet" href="/css/code-highlighting.css">
+
+  
+<link rel="stylesheet" href="/css/components.css">
+
+  
+<link rel="stylesheet" href="/css/nav.css">
+
+  
+<link rel="stylesheet" href="/css/paginator.css">
+
+  
+<link rel="stylesheet" href="/css/footer.css">
+
+  
+<link rel="stylesheet" href="/css/post-list.css">
+
+  
+  
+<link rel="stylesheet" href="/css/rainbow-banner.css">
+
+  
+  
+  
+<link rel="stylesheet" href="/css/toc.css">
+
+  
+  
+  
+  
+  
+<link rel="stylesheet" href="/css/post.css">
+
+  
+  
+  
+  
+  
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+    <body
+        data-color-scheme="auto"
+        data-uppercase-categories="true"
+        
+        data-rainbow-banner="true"
+        data-rainbow-banner-shown="auto"
+        data-rainbow-banner-month="6"
+        data-rainbow-banner-colors="#e50000,#ff8d00,#ffee00,#008121,#004cff,#760188"
+        
+        data-config-root="/"
+        
+        data-toc="true"
+        data-toc-max-depth="2"
+        
+        
+    >
+        <nav id="theme-nav">
+    <div class="inner">
+        <a class="title" href="/">The w31rd place</a>
+        <div class="nav-arrow"></div>
+        <div class="nav-items">
+            <a class="nav-item nav-item-home" href="/">Home</a>
+            
+            
+            <a class="nav-item" href="/archives">Archives</a>
+            
+            
+            
+            <a class="nav-item" href="/friends">Friends</a>
+            
+            
+            
+            <a class="nav-item" href="/projects">Projects</a>
+            
+            
+            
+            <a class="nav-item" href="/about">About</a>
+            
+            
+            
+            <a class="nav-item nav-item-github nav-item-icon" href="https://github.com/w31rd" target="_blank" aria-label="GitHub">&nbsp;</a>
+            
+            
+            
+            <a class="nav-item" href="mailto:zenfun510@gmail.com">Mail</a>
+            
+            
+            
+            <a class="nav-item nav-item-search nav-item-icon" href="/search" target="_blank" aria-label="Search">&nbsp;</a>
+            
+            
+        </div>
+    </div>
+</nav>
+        
+<article class="post">
+    <div class="meta">
+        
+
+        
+        <div class="date" id="date">
+            <span>October</span>
+            <span>13,</span>
+            <span>2023</span>
+        </div>
+        
+
+        <h2 class="title">Database study note</h2>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="content">
+        <h1 id="What-is-a-Database"><a href="#What-is-a-Database" class="headerlink" title="What is a Database?"></a>What is a Database?</h1><h2 id="x3D-x3D-Def-x3D-x3D"><a href="#x3D-x3D-Def-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;Def&#x3D;&#x3D;"></a>&#x3D;&#x3D;Def&#x3D;&#x3D;</h2><blockquote>
+<p><strong>Any collection of related information.</strong></p>
+<blockquote>
+<p><em>example:</em></p>
+<ul>
+<li>Phone Book</li>
+<li>Shopping list</li>
+</ul>
+</blockquote>
+</blockquote>
+<h1 id="DBMS-Database-Manager-System"><a href="#DBMS-Database-Manager-System" class="headerlink" title="DBMS(Database Manager System)"></a>DBMS(Database Manager System)</h1><blockquote>
+<h1 id="Why-we-need-DBMS"><a href="#Why-we-need-DBMS" class="headerlink" title="Why we need DBMS?"></a>Why we need DBMS?</h1><p><img src="/Database-study-note%5Cimage-5.png" alt="Alt text"></p>
+</blockquote>
+<h2 id="Def"><a href="#Def" class="headerlink" title="Def"></a>Def</h2><p>The Database manage application.</p>
+<blockquote>
+<p>DBMS!&#x3D;Database<br>We use DBMS to manage database.</p>
+</blockquote>
+<h2 id="Basically-Operate"><a href="#Basically-Operate" class="headerlink" title="Basically Operate"></a>Basically Operate</h2><p>C.R.U.D</p>
+<blockquote>
+<p>Create Read Update Delete</p>
+</blockquote>
+<p><strong>So our problem is how to interact with DBMS?</strong><br>SQL!</p>
+<h1 id="SQL-Structured-Query-Language"><a href="#SQL-Structured-Query-Language" class="headerlink" title="SQL(Structured Query Language)"></a>SQL(Structured Query Language)</h1><p>The language we command DBMS.<br><em>JUST LIKE CAMMAND DOG．</em></p>
+<h2 id="SQL-Def"><a href="#SQL-Def" class="headerlink" title="SQL Def"></a>SQL Def</h2><p><img src="/Database-study-note%5Cimage-2.png" alt="Alt text"></p>
+<h2 id="SQL-Mixed-In"><a href="#SQL-Mixed-In" class="headerlink" title="SQL Mixed In"></a>SQL Mixed In</h2><p><img src="/Database-study-note%5Cimage-10.png" alt="Alt text"><br><img src="/Database-study-note%5Cimage-11.png" alt="Alt text"><br><img src="/Database-study-note%5Cimage-12.png" alt="Alt text"></p>
+<h2 id="SQL-Practice"><a href="#SQL-Practice" class="headerlink" title="SQL Practice"></a>SQL Practice</h2><p>cmd DBMS create table or structure.<br><img src="/Database-study-note%5Cimage-8.png" alt="Alt text"></p>
+<blockquote>
+<p><em>caution:</em><br><img src="/Database-study-note%5Cimage-9.png" alt="Alt text"></p>
+</blockquote>
+<h1 id="RDBMS-and-no-RDBMS"><a href="#RDBMS-and-no-RDBMS" class="headerlink" title="RDBMS and no RDBMS"></a>RDBMS and no RDBMS</h1><h2 id="DIF"><a href="#DIF" class="headerlink" title="DIF"></a>DIF</h2><p><img src="/Database-study-note%5Cimage.png" alt=" "></p>
+<h2 id="RDBMS"><a href="#RDBMS" class="headerlink" title="RDBMS"></a>RDBMS</h2><p><img src="/Database-study-note%5Cimage-1.png" alt="Alt text"></p>
+<blockquote>
+<p>All in one: just in table</p>
+</blockquote>
+<h2 id="no-RDBMS"><a href="#no-RDBMS" class="headerlink" title="no RDBMS"></a>no RDBMS</h2><p><img src="/Database-study-note%5Cimage-3.png" alt="Alt text"></p>
+<blockquote>
+<p>All in one: put in everywhere except in table.<br>So,no RDBMS have no sql.</p>
+</blockquote>
+<h2 id="Sum"><a href="#Sum" class="headerlink" title="Sum"></a>Sum</h2><p><img src="/Database-study-note%5Cimage-6.png" alt="Alt text"></p>
+<h1 id="Q-in-SQL"><a href="#Q-in-SQL" class="headerlink" title="Q in SQL"></a>Q in SQL</h1><p><strong>Query</strong> : the cmd we convey to DBMS. DBMS will follow your query to operate the Database.</p>
+<blockquote>
+<p>more explain:<br><img src="/Database-study-note%5Cimage-4.png" alt="Alt text"></p>
+</blockquote>
+<p>So, you know, query is very important.How can we create a query?</p>
+<p>ANS:<em>By follow the sql syntax.</em></p>
+<h1 id="Primary-Key"><a href="#Primary-Key" class="headerlink" title="Primary Key"></a>Primary Key</h1><p>Main identifier.UNIQUE and NOT_NULL</p>
+<blockquote>
+<p>HOW TO？<br><img src="/Database-study-note%5Cimage-14.png" alt="Alt text"><br>equals<br><img src="/Database-study-note%5Cimage-15.png" alt="Alt text"></p>
+</blockquote>
+<h2 id="Surrogate-Keys"><a href="#Surrogate-Keys" class="headerlink" title="Surrogate Keys"></a>Surrogate Keys</h2><p>The key have no relation with the true world. <em>JUST A CODE</em>.</p>
+<h2 id="Natural-Keys"><a href="#Natural-Keys" class="headerlink" title="Natural Keys"></a>Natural Keys</h2><p>The key get from true world. Like ssn,  ID card identify id…</p>
+<h2 id="Foreign-Keys"><a href="#Foreign-Keys" class="headerlink" title="Foreign Keys"></a>Foreign Keys</h2><p>The key from another table’s primary key. Just like:<br><em>“The household registration on your ID is a region named China Primary Key from this list in China”</em><br>Define the relationship between the tables.</p>
+<h2 id="Composite-Keys"><a href="#Composite-Keys" class="headerlink" title="Composite Keys"></a>Composite Keys</h2><p><img src="/Database-study-note%5Cimage-7.png" alt="Alt text"><br>Two rows composite a unique row.</p>
+<h1 id="How-to-write-SQL"><a href="#How-to-write-SQL" class="headerlink" title="How to write SQL?"></a>How to write SQL?</h1><p>&#x3D;&#x3D;Tips&#x3D;&#x3D;: Although SQL statements are <strong>not case-sensitive</strong>, we still recommend using uppercase letters to represent SQL statement keywords. This is to distinguish SQL statements from other statements.</p>
+<h2 id="Key-words"><a href="#Key-words" class="headerlink" title="Key words"></a>Key words</h2><p><img src="/Database-study-note%5Cimage-13.png" alt="Alt text"></p>
+<h1 id="Constraints"><a href="#Constraints" class="headerlink" title="Constraints"></a>Constraints</h1><h2 id="Constraints-Def"><a href="#Constraints-Def" class="headerlink" title="Constraints Def"></a>Constraints Def</h2><p>Constraints are <em>rules or limitations</em> that are applied to a database, table, column, or relationship to ensure data integrity and consistency. For example, a constraint can prevent inserting a null value into a column, or enforce a unique value for each row in a table. Some common types of constraints are primary key, foreign key, check, not null, and unique.</p>
+<h2 id="e-g"><a href="#e-g" class="headerlink" title="e.g"></a>e.g</h2><blockquote>
+<p>NOT_NULL<br>UNIQUE<br>AUTO_INCREMENT<br>…</p>
+</blockquote>
+<h1 id="Wild-Card-🎴"><a href="#Wild-Card-🎴" class="headerlink" title="Wild Card 🎴"></a>Wild Card 🎴</h1><p>example in Chinese : <strong>Laizi</strong> in Chinese playing card. Can be converted at will according to the location.<br><em>It is used for feature value matching.</em></p>
+<blockquote>
+<p>%lol% Matching any sentences that contain the string of ‘lol’;</p>
+</blockquote>
+<h1 id="UNION"><a href="#UNION" class="headerlink" title="UNION"></a>UNION</h1><p>It is used to make the values in multiple columns into a column, and named the column with <em>the key of the first column.</em></p>
+<blockquote>
+<p>e.g.<br><strong>code</strong><br><img src="/Database-study-note%5Cimage-17.png" alt="Alt text"><br><strong>result</strong><br><img src="/Database-study-note%5Cimage-18.png" alt="Alt text"></p>
+</blockquote>
+<h1 id="JOINS"><a href="#JOINS" class="headerlink" title="JOINS"></a>JOINS</h1><p>When ON is true, it will rightly join together.</p>
+<blockquote>
+<p>Take rows from one table, combine them with rows from another table.<br><img src="/Database-study-note%5Cimage-19.png" alt="Alt text"><br><em>Upper example meaning:</em><br>Combine the rows of <code>Employee.emp_id = Branch.mgr_id</code>, and read the<code>Branch.branch_name</code></p>
+<blockquote>
+<p>RIGHT JOIN</p>
+<blockquote>
+<p>显示 JOIN 后的合并了左值的右值，但不包括右值本身没有的内容</p>
+</blockquote>
+<p>LEFT JOIN</p>
+<blockquote>
+<p>The left-value merger of the right value after JOIN, but it does not include the content that the left value itself does not have</p>
+</blockquote>
+<p><img src="/Database-study-note%5Cimage-21.png" alt="Alt text"><br><img src="/Database-study-note%5Cimage-20.png" alt="Alt text"><br>There are many NULL , right?</p>
+</blockquote>
+</blockquote>
+<h1 id="IN"><a href="#IN" class="headerlink" title="IN"></a>IN</h1><p><strong>No key name is the same, the same value can meet the requirements.</strong><br><img src="/Database-study-note%5Cimage-22.png" alt="Alt text"><br><img src="/Database-study-note%5Cimage-23.png" alt="Alt text"></p>
+<h1 id="ON-DELETE-SET"><a href="#ON-DELETE-SET" class="headerlink" title="ON DELETE SET"></a>ON DELETE SET</h1><p>is used to specify that after a certain ID that was referenced by ForeignKEY was deleted, how should we handle the ForeignKEY</p>
+<h2 id="1-On-Delete-Set-NULL"><a href="#1-On-Delete-Set-NULL" class="headerlink" title="1. On Delete Set NULL"></a>1. On Delete Set NULL</h2><blockquote>
+<p>e.g.<br><img src="/Database-study-note%5Cimage-24.png" alt="Alt text"><br>When Branch.branch_id is deleted, employee.branch_id will automatically set to NULL</p>
+</blockquote>
+<h2 id="2-ON-DELETE-CASCADE"><a href="#2-ON-DELETE-CASCADE" class="headerlink" title="2. ON DELETE CASCADE"></a>2. ON DELETE CASCADE</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE works_with (</span><br><span class="line">  emp_id INT,</span><br><span class="line">  client_id INT,</span><br><span class="line">  total_sales INT,</span><br><span class="line">  PRIMARY KEY(emp_id, client_id),</span><br><span class="line">  FOREIGN KEY(emp_id) REFERENCES employee(emp_id) ON DELETE CASCADE,</span><br><span class="line">  FOREIGN KEY(client_id) REFERENCES client(client_id) ON DELETE CASCADE</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>When the client.client_id is deleted, the row where the works_with.client_id   in will be deleted.</p>
+<h1 id="TRIGGER"><a href="#TRIGGER" class="headerlink" title="TRIGGER"></a>TRIGGER</h1><p><img src="/Database-study-note%5Cimage-25.png" alt="Alt text"><br><img src="/Database-study-note%5Cimage-26.png" alt="Alt text"><br><img src="/Database-study-note%5Cimage-27.png" alt="Alt text"></p>
+<ul>
+<li>if IF is true,TRIGGER is trigger</li>
+<li>NEW is the new row.</li>
+<li>DELIMITER add a new delimiter,because need a extra delimiter to stop trigger running.</li>
+<li>DELIMITER only run in cmd lines.</li>
+</ul>
+<h1 id="How-“FROM-…-WHERE”-works"><a href="#How-“FROM-…-WHERE”-works" class="headerlink" title="How “FROM … WHERE” works?"></a>How “FROM … WHERE” works?</h1><p>As we know, “FROM … WHERE” is used to ‘filter’ the column we need. It’s like smart, obviously “FROM … WHERE” rely on the real value to screen.</p>
+<blockquote>
+<p>SELECT <em>STH</em> FROM <em>SWH</em> WHERE (statement)<em>TRUE&#x2F;FALSE</em><br>Explanation: If statement is true, return directly as the true column<br>e.g. WHERE ID&#x3D;1 &#x3D;&gt; SELECT ID &#x3D;&#x3D; 1 ‘s column<br>WHERE ID &#x3D; 1 OR 1&#x3D;1 &#x3D;&gt; Forever true, SELECT all</p>
+<blockquote>
+<p>tips:OR &#x2F; AND is Short-circuit</p>
+</blockquote>
+</blockquote>
+<h1 id="ENTITY"><a href="#ENTITY" class="headerlink" title="ENTITY"></a>ENTITY</h1><p>The object to store or model information.</p>
+<h2 id="Derived-attribute"><a href="#Derived-attribute" class="headerlink" title="Derived attribute"></a>Derived attribute</h2><p>The attribute derive from another attribute on the entity.</p>
+<blockquote>
+<p>such as:<br><code>age derive from birthday</code></p>
+</blockquote>
+
+    </div>
+
+    
+    <div class="about">
+        <h1>About this Post</h1>
+        <div class="details">
+            <p>This post is written by w31rd, licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc/4.0">CC BY-NC 4.0</a>.</p>
+        </div>
+        
+    </div>
+    
+
+    <div class="container post-prev-next">
+        <a class="next"></a>
+        
+        <a href="/2023/04/20/Java%E5%AD%A6%E4%B9%A0%E7%AE%80%E8%AE%B0/" class="prev">
+            <div>
+                <div class="text">
+                    <p class="label">Previous</p>
+                    <h3 class="title"></>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+
+    
+        
+        
+    
+</article>
+
+        <footer>
+    <div class="inner">
+        <div class="links">
+            
+            <div class="group">
+                <h2 class="title">Blog</h2>
+                
+                <a href="/" class="item">Blog</a>
+                
+                <a href="/archives" class="item">Archives</a>
+                
+                <a href="/tags" class="item">Tags</a>
+                
+                <a href="/categories" class="item">Categories</a>
+                
+                <a href="/search" class="item">Search</a>
+                
+                <a href="/friends" class="item">Friends</a>
+                
+                <a href="/projects" class="item">Projects</a>
+                
+                <a href="/resume" class="item">Resume</a>
+                
+                <a href="/about" class="item">About</a>
+                
+                <a href="/atom.xml" class="item">RSS</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">Projects</h2>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/w31r4/hdu-cs-wiki" class="item">CS-wiki</a>
+                
+            </div>
+            
+            <div class="group">
+                <h2 class="title">Me</h2>
+                
+                <a target="_blank" rel="noopener" href="https://github.com/w31r4" class="item">GitHub</a>
+                
+                <a href="mailto:zenfun510@gmail.com" class="item">Email</a>
+                
+            </div>
+            
+        </div>
+        <span>&copy; 2023 w31rd<br>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> </span>
+        
+        
+            <br>
+            <div class="color-scheme-toggle" role="radiogroup" id="theme-color-scheme-toggle">
+                <label>
+                    <input type="radio" value="light">
+                    <span>Light</span>
+                </label>
+                <label>
+                    <input type="radio" value="dark">
+                    <span>Dark</span>
+                </label>
+                <label>
+                    <input type="radio" value="auto">
+                    <span>Auto</span>
+                </label>
+            </div>
+        
+    </div>
+</footer>
+
+
+        
+<script src="/js/main.js"></script>
+
+        
+        
+        
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            window.addEventListener('load', () => {
+                ScrollReveal({ delay: 250, reset: true, easing: 'cubic-bezier(0, 0, 0, 1)' })
+                ScrollReveal().reveal('.post-list-item .cover-img img')
+                ScrollReveal().reveal('.post-list-item, .card, .content p img, .content .block-large img', { distance: '60px', origin: 'bottom', duration: 800 })
+            })
+        </script>
+        
+    </body>
+</html>
